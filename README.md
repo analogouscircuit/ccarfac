@@ -16,4 +16,4 @@ for reasonable parameter values.  These are used, together with a block size and
 to initialize the CARFAC model state, `carfacagc_state_s`, using the `carfacagc_init` function. A signal can then be processed in blocks using `carfacagc_process_block`.  The output is contained
 in the CARFAC state structure (e.g. `bm_hpf` or `ihc_out` for basilar membrane or hair cell data respectively).
 
-There is also a function to produce a stabilized auditory image (SAI),  namely `sai_generate`.
+There is also a function to produce a stabilized auditory image (SAI),  namely `sai_generate`. (SAI support is still being refined.)
