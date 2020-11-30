@@ -2,8 +2,8 @@
 
 ![sample nap](https://raw.githubusercontent.com/analogouscircuit/JCARFAC/main/images/hc440-nap.png)
 
-Pure C implementation of [Richard Lyon's CARFAC model](https://books.google.com/books?id=ENmiDgAAQBAJ&dq=human+and+machine+hearing+lyon&lr=&source=gbs_navlinks_s).  See also [pycarfac](https://github.com/analogouscircuit/pycarfac)  and [JCARFAC](https://github.com/analogouscircuit/JCARFAC) for Python and Julia wrappers.  This is a straightforward adaptation of 
-[Andre van Schaik's Python version](https://github.com/vschaik/CARFAC). I have found it to be stable, but bear in mind this grad student research code.  No warranties are offered.
+Pure C implementation of [Richard Lyon's CARFAC model](https://books.google.com/books?id=ENmiDgAAQBAJ&dq=human+and+machine+hearing+lyon&lr=&source=gbs_navlinks_s).  See also [pycarfac](https://github.com/analogouscircuit/pycarfac)  and [JCARFAC](https://github.com/analogouscircuit/JCARFAC) for Python and Julia wrappers.  The C library is largely an adaptation of 
+[Andre van Schaik's Python version](https://github.com/vschaik/CARFAC), the main loops of which were written in regular Python and are thus rather slow. I have found the C version offered here to be stable, and it has been tested for memory leaks.  Bear in mind this grad student research code.  No warranties are offered.
 
 A basic makefile is included with two build targets: `clib` (the default) and `test`.
 The former creates a linkable library, used, for example, by the Julia wrapper; the latter compiles a
